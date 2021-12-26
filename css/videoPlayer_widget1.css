@@ -31,19 +31,21 @@
 /* holder for video player */
 #componentWrapper .videoPlayer{
 	position:absolute;
-	top:0px !important;
-	left:0px !important;
-	width:320px;
-	height:224px;
+	top:50%;
+	left:50%;
+	max-width:900px;
+	width: calc(100% - 60px);
 	background:#111;
-	
-	/* needs not to be hidden (display:none), otherwise its not going to initialize in flash! */
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
 	opacity: 0; 
-	filter: alpha(opacity=0); 
-	-ms-filter: "alpha(opacity=0)"; 
-	-khtml-opacity: 0; 
-	-moz-opacity: 0; 
 }	
+#componentWrapper .videoPlayer::before {
+   padding-bottom: 56.25%;
+   content: "";
+   display: inline-block;
+   vertical-align: top;
+}
 
 /* local video player fullscreen */
 #componentWrapper .videoPlayer_fs{
@@ -330,7 +332,19 @@
 	width:30px;
 	height:30px;
 	top:0px;
-	right:-30px;
+	right:-35px;
 }
+.video-player-portrait .player_close{
+	right:0!important;
+	top: -35px!important;
+}
+.video-player-landscape .player_close{
+	right:-35px!important;
+	top: 0!important;
+}
+.video-player-portrait{
+	width: 100%!important;
+}
+
 
 

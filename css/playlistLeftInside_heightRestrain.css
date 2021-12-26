@@ -473,3 +473,38 @@ body {
 }
 
 
+/* share */
+.share_controls_wrap{
+	position:absolute;
+	width:30px;
+	height:30px;
+	bottom:20px;
+	right:60px;
+	background: rgba(0,0,0,0);
+	z-index: 20;
+}
+.share_controls_wrap img{
+	display: block;
+}
+.share_toggle{
+	position:absolute;
+	width:30px;
+	height:30px;
+	top:0px;
+	left:0px;
+}
+.share_controls{
+	position: absolute;
+	left: -120px;
+	top: 0;
+	width:120px;
+	height:30px;
+	display: none;
+}
+.share_controls div{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	float:left;
+	margin-right: 10px;
+}

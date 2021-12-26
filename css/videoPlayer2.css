@@ -33,25 +33,21 @@
 	position:absolute;
 	top:50%;
 	left:50%;
-	width:500px;
-	height:280px;
-	margin-left:-250px;
-	margin-top:-140px;
+	max-width:900px;
+	width: calc(100% - 60px);
 	background:#111;
-	
-	border:5px solid #FFF;
-	
-	-moz-box-shadow: 2px 2px 5px #222;
-	-webkit-box-shadow: 2px 2px 5px #222;
-	box-shadow: 2px 2px 5px #222;
-	/* placing shadow for IE8 will cut off close btn off!! */
-	
-	/* needs not to be hidden (display:none), otherwise its not going to initialize in flash! */
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
 	opacity: 0; 
-	filter: alpha(opacity=0); 
-	-ms-filter: "alpha(opacity=0)"; 
-	-khtml-opacity: 0; 
-	-moz-opacity: 0; 
+	border:5px solid #FFF;
+	box-shadow: 2px 2px 5px #222;
+}
+
+#componentWrapper2 .videoPlayer::before {
+   padding-bottom: 56.25%;
+   content: "";
+   display: inline-block;
+   vertical-align: top;
 }	
 
 /* local video player fullscreen */
@@ -341,5 +337,17 @@
 	top:0px;
 	right:-35px;
 }
+.video-player-portrait .player_close{
+	right:0!important;
+	top: -35px!important;
+}
+.video-player-landscape .player_close{
+	right:-35px!important;
+	top: 0!important;
+}
+.video-player-portrait{
+	width: 100%!important;
+}
+
 
 
