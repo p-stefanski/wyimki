@@ -128,11 +128,11 @@
 				
 				/* SLIDESHOW */
 				/* slideshowOn; true, false */
-				slideshowOn: false,
+				slideshowOn: true,
 				/* useGlobalDelay; true, false (use same timer delay for all slides, if false you need to set individual delays for every slide -> data-duration attribute) */
 				useGlobalDelay: true,
 				/* slideshowAdvancesToNextCategory: true/false. On the end/beginning of current category, go to next/previous one, instead of loop current one. */
-				slideshowAdvancesToNextCategory: true,
+				slideshowAdvancesToNextCategory: false,
 				/* randomPlay; true, false (random image play in category) */
 				randomPlay: false,
 				
@@ -259,7 +259,7 @@
                  </div>  
                  
                  <!-- menu buttons -->
-                 <div class="prevMenuBtn"><img src='media/data/gallery_icons/playlist_prev_v.png' width='18' height='12' alt=''/></div>   
+                 <div class="prevMenuBtn"><img src='media/data/gallery_icons/playlist_prev_v.png' width='30' height='12' alt=''/></div>
                  <div class="nextMenuBtn"><img src='media/data/gallery_icons/playlist_next_v.png' width='18' height='12' alt=''/></div> 
                  
                  <!-- thumb buttons -->
