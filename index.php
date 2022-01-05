@@ -263,11 +263,11 @@
                  <div class="nextMenuBtn"><img src='media/data/gallery_icons/playlist_next_v.png' width='18' height='12' alt=''/></div> 
                  
                  <!-- thumb buttons -->
-                 <div class="prevThumbBtn"><img src='media/data/gallery_icons/playlist_prev_v.png' width='18' height='12' alt=''/></div>   
-                 <div class="nextThumbBtn"><img src='media/data/gallery_icons/playlist_next_v.png' width='18' height='12' alt=''/></div>  
+                 <div class="prevThumbBtn"><img src='media/data/gallery_icons/playlist_prev_v.png' width='100%' height='100%' alt=''/></div>
+                 <div class="nextThumbBtn"><img src='media/data/gallery_icons/playlist_next_v.png' width='100%' height='100%' alt=''/></div>
                  
                  <!-- playlist toggle -->
-                 <div class="playlist_toggle" title="Playlist"><img src='media/data/gallery_icons/plus.png' width='30' height='30' alt='playlist_toggle'/></div>
+                 <div class="playlist_toggle" title="Playlist"><img src='media/data/gallery_icons/plus.png' width='100%' height='100%' alt='playlist_toggle'/></div>
               
               </div>
      
@@ -282,11 +282,11 @@
               <div class="gallery_fullscreen" title="Fullscreen"><img src='media/data/gallery_icons/fullscreen_enter.png' width='30' height='30' alt=''/></div>
 
               <div class="share_controls_wrap">
-              	 <div class="share_toggle" title="Share"><img src='media/data/gallery_icons/share_toggle.png'/></div>
+              	 <div class="share_toggle" title="Share"><img src='media/data/gallery_icons/share_toggle.png' width='100%' height='100%'/></div>
               	 <div class="share_controls">
-	                  <div class="facebook_toggle" title="Share on Facebook"><img src='media/data/gallery_icons/facebook.png'/></div>
-	                  <div class="twitter_toggle" title="Share on Twitter"><img src='media/data/gallery_icons/twitter.png'/></div>
-	                  <div class="tumblr_toggle" title="Share on Tumblr"><img src='media/data/gallery_icons/tumblr.png'/></div>
+	                  <div class="facebook_toggle" title="Share on Facebook"><img src='media/data/gallery_icons/facebook.png' width='100%' height='100%' /></div>
+	                  <div class="twitter_toggle" title="Share on Twitter"><img src='media/data/gallery_icons/twitter.png' width='100%' height='100%'/></div>
+	                  <div class="tumblr_toggle" title="Share on Tumblr"><img src='media/data/gallery_icons/tumblr.png' width='100%' height='100%'/></div>
                   </div>
               </div>
               
@@ -295,14 +295,14 @@
               
               <!-- slideshow controls - previous,pause/play,next -->
               <div class="slideshow_controls">
-              	  <div class="controls_next"><img src='media/data/gallery_icons/next.png' width='30' height='30' alt='controls_next'/></div>
-                  <div class="controls_toggle"><img src='media/data/gallery_icons/play.png' width='30' height='30' alt='controls_toggle'/></div>
-                  <div class="controls_prev"><img src='media/data/gallery_icons/prev.png' width='30' height='30' alt='controls_prev'/></div>
+              	  <div class="controls_next"><img src='media/data/gallery_icons/next.png' width='100%' height='100%' alt='controls_next'/></div>
+                  <div class="controls_toggle"><img src='media/data/gallery_icons/play.png' width='100%' height='100%' alt='controls_toggle'/></div>
+                  <div class="controls_prev"><img src='media/data/gallery_icons/prev.png' width='100%' height='100%' alt='controls_prev'/></div>
               </div>
               
               <!-- data controls - link/description -->
               <div class="data_controls">
-                  <div class="info_toggle" title="Info"><img src='media/data/gallery_icons/info.png' width='30' height='30' alt='info_toggle'/></div>
+                  <div class="info_toggle" title="Info"><img src='media/data/gallery_icons/info.png' width='100%' height='100%' alt='info_toggle'/></div>
                   <div class="link_toggle" title="Visit url"><img src='media/data/gallery_icons/link.png' width='30' height='30' alt='link_toggle'/></div>
               </div>
               <!-- description holder -->
@@ -318,7 +318,7 @@
                  <div class="playerHolder">
                      
                       <div class="player_controls">
-                          <div class="controls_prev"><img src='media/data/audio_icons/prev.png' width='30' height='30' alt='controls_prev'/></div>
+                          <div class="controls_prev"><img src='media/data/audio_icons/prev.png' width='100%' height='100%' alt='controls_prev'/></div>
                           <div class="controls_next"><img src='media/data/audio_icons/next.png' width='30' height='30' alt='controls_next'/></div>
                           <div class="controls_toggle"><img src='media/data/audio_icons/play.png' width='30' height='30' alt='controls_toggle'/></div>
                           <div class="player_volume"><img src='media/data/audio_icons/volume.png' width='30' height='30' alt='player_volume'/></div>

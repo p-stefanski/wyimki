@@ -64,7 +64,7 @@ body {
 
 #componentWrapper .thumbHolder{
 	position:absolute;
-	left:0px;
+	left:20px;
 	/*size is set automatically in jquery based on thumb size for every category */
 	/*background:green;*/
 	overflow:hidden;
@@ -211,18 +211,13 @@ body {
 }
 
 .slideshow_controls .controls_prev{
-	position:relative;
-	width:30px;
-	height:30px;
-	top:0px;
-	left:0px;
-	float:right;
-}
-
-
-
-
-
+    position:relative;
+    width:30px;
+    height:30px;
+    top:0px;
+    left:0px;
+    float:right;
+    }
 
 /* data_controls */
 #componentWrapper .data_controls{
@@ -355,8 +350,8 @@ body {
 	height:12px;
 	top:50%;
 	left:50%;
-	margin-left:-6px;
-	margin-top:-9px;
+	margin-left:-8px;
+	margin-top:-8px;
 }
 
 #componentWrapper .nextThumbBtn{
@@ -374,8 +369,8 @@ body {
 	height:12px;
 	top:50%;
 	left:50%;
-	margin-left:-6px;
-	margin-top:-9px;
+	margin-left:-8px;
+	margin-top:-6px;
 }
 
 
@@ -694,4 +689,131 @@ body {
 	height: 30px;
 	float:left;
 	margin-right: 10px;
+}
+
+@media screen
+  and (max-device-width: 480px) {
+    .slideshow_controls{
+        position:absolute;
+        width:220px;
+        height:60px;
+    }
+
+    .slideshow_controls .controls_prev{
+        width:60px;
+        height:60px;
+        }
+
+    .slideshow_controls .controls_next,
+    .slideshow_controls .controls_toggle{
+        position:relative;
+        width:60px;
+        height:60px;
+        top:0px;
+        left:0px;
+        margin-left:20px;
+        float:right;
+    }
+
+    #componentWrapper .gallery_fullscreen{
+        display: none;
+    }
+
+    .share_controls_wrap{
+    	position:absolute;
+    	width:300px;
+    	height:60px;
+    	bottom:20px;
+    	left:60px;
+    }
+
+    .share_toggle{
+    	position:absolute;
+    	width:60px;
+    	height:60px;
+    	top:0px;
+    	left:0px;
+    }
+    .share_controls{
+    	position: absolute;
+    	left: 80px;
+    	top: 0;
+    	width:240px;
+    	height:60px;
+    	display: none;
+    }
+    .share_controls div{
+    	position: relative;
+    	width: 60px;
+    	height: 60px;
+    	float:left;
+    	margin-right: 20px;
+    }
+
+    #componentWrapper .playlist_toggle{
+    	position:absolute;
+    	width:60px;
+    	height:60px;
+    	bottom:20px;
+    	left:-100px;
+    	display:none;
+    }
+
+    #componentWrapper .info_toggle{
+        position:relative;
+        width:60px;
+        height:60px;
+        top:0px;
+        left:120px;
+        float:left;
+        margin-right:10px;
+        display:none;
+    }
+    #componentWrapper .info_holder{
+        font-size: 30pt;
+    }
+
+    #componentWrapper .prevThumbBtn{
+        position:absolute;
+        width:30px;
+        height:30px;
+        display:none;
+        /*background:red;*/
+    }
+
+    #componentWrapper .prevThumbBtn img{
+        position:relative;
+        display:block;
+        width:30px;
+        height:30px;
+        top:50%;
+        left:50%;
+        margin-left:-16px;
+        margin-top:-16px;
+    }
+
+    #componentWrapper .nextThumbBtn{
+        position:absolute;
+        width:30px;
+        height:30px;
+        display:none;
+        /*background:red;*/
+    }
+
+    #componentWrapper .nextThumbBtn img{
+        position:relative;
+        display:block;
+        width:30px;
+        height:30px;
+        top:50%;
+        left:50%;
+        margin-left:-16px;
+        margin-top:-12px;
+    }
+
+    #componentWrapper .thumbHolder{
+        position:absolute;
+        left:20px;
+        overflow:hidden;
+    }
 }
