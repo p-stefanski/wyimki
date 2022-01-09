@@ -14,6 +14,8 @@
 		<meta property="og:image" content="http://wyimki.pl/media/blog/<?php print($default_image) ?>.jpg"/>
 		<meta property="fb:admins" content="100000246552747" />
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>wyimki: <?php print($title); ?></title>
 
         <link rel="stylesheet" type="text/css" href="css/videoPlayer.css" />
@@ -118,9 +120,9 @@
 				
 				/* DEEPLINKING SETTINGS */
 				/* useDeeplink: true/false */
-				useDeeplink:false,
+				useDeeplink:true,
 				/* startUrl: deeplink start url, enter 'div' data-address/'li' data-address (two levels). Or just 'div' data-address (single level). */
-				startUrl: '/blog',
+				startUrl: 'blog',
 				
 				/* NO DEEPLINKING SETTINGS */
 				/* activeCategory: active category to start with (counting starts from zero, 0=first category, 1=second category, 2=third category... etc) */
@@ -240,8 +242,8 @@
                  
                  <div class="thumbHolder">
                      <div class="thumbWrapper">
-								 <div class="playlist" data-address="blog" data-title='blog' data-transitionType='alpha' data-imageFitMode='fit-inside' data-duration='10000' data-transitionTime='1000' data-transitionEase='easeInOutExpo' data-bgColor='#000000' data-playlistSize='180'>
-                                   <ul> 
+								 <div class="playlist" data-address='blog' data-title='blog' data-transitionType='reveal' data-imageFitMode='fit-inside' data-duration='10000' data-transitionEase='_default' data-bgColor='#000000' data-playlistSize='180' data-transitionEase='easeInOutExpo'>
+                                   <ul>
 									  		<?php foreach ($photos as $value) { ?>
 
 											  <li data-address='<?php print($value) ?>' class='playlistItem6' data-imagePath='media/blog/<?php print($value) ?>.jpg' data-target='_blank' data-caption-id="#caption_fb" data-description="&#9993; kontakt@wyimki.pl"<?php if (in_array($value, $movies)) print " data-localMp4='media/blog/2015-08-01-02.mp4' data-localPreview='media/blog/2015-08-01-02.jpg'" ?>><a href='#'><img src='media/blog/thumbs/<?php print($value) ?>.jpg' width='133' height='100' alt=''/></a></li>
