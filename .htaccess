@@ -1,5 +1,6 @@
 AddHandler application/x-httpd-php52 php
 
 RewriteEngine On
+RewriteRule ^sitemap.xml$ sitemap.php [L]
 RewriteCond %{QUERY_STRING} (.+)
-RewriteRule (.*) /#/blog/%1? [R=301,L,NE]
+RewriteRule (.*) /#/blog/%1? [R=301,L,NE,QSD]
