@@ -194,7 +194,7 @@ body {
 	width:110px;
 	height:30px;
 	top:20px;
-	left:60px;
+	left:30px;
 	/*background:red;*/
 	display:none;
 }
@@ -225,7 +225,7 @@ body {
 	width:70px;
 	height:30px;
 	top:20px;
-	left:180px;
+	left:150px;
 	/*background:red;*/
 }
 
@@ -658,7 +658,7 @@ body {
 /* share */
 .share_controls_wrap{
 	position:absolute;
-	width:150px;
+	width:60px;
 	height:30px;
 	bottom:20px;
 	left:60px;
@@ -679,7 +679,7 @@ body {
 	position: absolute;
 	left: 40px;
 	top: 0;
-	width:120px;
+	width:30px;
 	height:30px;
 	display: none;
 }
@@ -689,131 +689,4 @@ body {
 	height: 30px;
 	float:left;
 	margin-right: 10px;
-}
-
-@media screen
-  and (max-device-width: 480px) {
-    .slideshow_controls{
-        position:absolute;
-        width:220px;
-        height:60px;
-    }
-
-    .slideshow_controls .controls_prev{
-        width:60px;
-        height:60px;
-        }
-
-    .slideshow_controls .controls_next,
-    .slideshow_controls .controls_toggle{
-        position:relative;
-        width:60px;
-        height:60px;
-        top:0px;
-        left:0px;
-        margin-left:20px;
-        float:right;
-    }
-
-    #componentWrapper .gallery_fullscreen{
-        display: none;
-    }
-
-    .share_controls_wrap{
-    	position:absolute;
-    	width:300px;
-    	height:60px;
-    	bottom:20px;
-    	left:60px;
-    }
-
-    .share_toggle{
-    	position:absolute;
-    	width:60px;
-    	height:60px;
-    	top:0px;
-    	left:0px;
-    }
-    .share_controls{
-    	position: absolute;
-    	left: 80px;
-    	top: 0;
-    	width:240px;
-    	height:60px;
-    	display: none;
-    }
-    .share_controls div{
-    	position: relative;
-    	width: 60px;
-    	height: 60px;
-    	float:left;
-    	margin-right: 20px;
-    }
-
-    #componentWrapper .playlist_toggle{
-    	position:absolute;
-    	width:60px;
-    	height:60px;
-    	bottom:20px;
-    	left:-100px;
-    	display:none;
-    }
-
-    #componentWrapper .info_toggle{
-        position:relative;
-        width:60px;
-        height:60px;
-        top:0px;
-        left:120px;
-        float:left;
-        margin-right:10px;
-        display:none;
-    }
-    #componentWrapper .info_holder{
-        font-size: 30pt;
-    }
-
-    #componentWrapper .prevThumbBtn{
-        position:absolute;
-        width:30px;
-        height:30px;
-        display:none;
-        /*background:red;*/
-    }
-
-    #componentWrapper .prevThumbBtn img{
-        position:relative;
-        display:block;
-        width:30px;
-        height:30px;
-        top:50%;
-        left:50%;
-        margin-left:-16px;
-        margin-top:-16px;
-    }
-
-    #componentWrapper .nextThumbBtn{
-        position:absolute;
-        width:30px;
-        height:30px;
-        display:none;
-        /*background:red;*/
-    }
-
-    #componentWrapper .nextThumbBtn img{
-        position:relative;
-        display:block;
-        width:30px;
-        height:30px;
-        top:50%;
-        left:50%;
-        margin-left:-16px;
-        margin-top:-12px;
-    }
-
-    #componentWrapper .thumbHolder{
-        position:absolute;
-        left:20px;
-        overflow:hidden;
-    }
 }

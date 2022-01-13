@@ -279,7 +279,7 @@
                   <div class="mediaHolder2"></div>
                   
               </div> 
-              
+
               <!-- fullscreen btn (automatically removed if browser doesnt support fullscreen) -->
               <div class="gallery_fullscreen" title="Fullscreen"><img src='media/data/gallery_icons/fullscreen_enter.png' width='30' height='30' alt=''/></div>
 
@@ -287,11 +287,9 @@
               	 <div class="share_toggle" title="Share"><img src='media/data/gallery_icons/share_toggle.png' width='100%' height='100%'/></div>
               	 <div class="share_controls">
 	                  <div class="facebook_toggle" title="Share on Facebook"><img src='media/data/gallery_icons/facebook.png' width='100%' height='100%' /></div>
-	                  <div class="twitter_toggle" title="Share on Twitter"><img src='media/data/gallery_icons/twitter.png' width='100%' height='100%'/></div>
-	                  <div class="tumblr_toggle" title="Share on Tumblr"><img src='media/data/gallery_icons/tumblr.png' width='100%' height='100%'/></div>
                   </div>
               </div>
-              
+
               <!-- toggle music player -->
               <!-- <div class="music_toggle"><img src='media/data/audio_icons/music.png' width='30' height='30' alt='music_toggle'/></div> -->
               
