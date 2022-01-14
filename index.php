@@ -10,8 +10,8 @@
 
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="wyimki:<?php print($title) ?>" />
-		<meta property="og:url" content="http://wyimki.pl" />
-		<meta property="og:image" content="http://wyimki.pl/media/blog/<?php print($default_image) ?>.jpg"/>
+		<meta property="og:url" content="https://wyimki.pl" />
+		<meta property="og:image" content="https://wyimki.pl/media/blog/<?php print($default_image) ?>.jpg"/>
 		<meta property="fb:admins" content="100000246552747" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
         <link rel="stylesheet" type="text/css" href="css/videoPlayer.css" />
         <link rel="stylesheet" type="text/css" href="css/audioPlayer_tl.css" />
 		<link rel="stylesheet" type="text/css" href="css/playlistRightInside.css" />
-        <link rel='shortcut icon' type='image/x-icon' href='http://wyimki.pl/favicon.ico' />
+        <link rel='shortcut icon' type='image/x-icon' href='https://wyimki.pl/favicon.ico' />
         
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
