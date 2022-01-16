@@ -6,7 +6,7 @@
 <url><loc>http://wyimki.pl</loc></url>
 <?php foreach ($photos as $value) { ?>
      <url>
-        <loc>https://wyimki.pl?<?php print($value) ?></loc>
+        <loc>https://wyimki.pl/blog/<?php print($value) ?></loc>
         <image:image>
             <image:loc>https://wyimki.pl/media/blog/<?php print($value) ?>.jpg</image:loc>
         </image:image>
