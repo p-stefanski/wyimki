@@ -2,5 +2,7 @@ AddHandler application/x-httpd-php52 php
 
 RewriteEngine On
 RewriteRule ^sitemap.xml$ sitemap.php [L]
-RewriteCond %{QUERY_STRING} (.+)
-RewriteRule (.*) /#/blog/%1? [R=301,L,NE,QSD]
+#RewriteCond %{QUERY_STRING} (.+)
+#RewriteRule (.*) /#/blog/%1? [R=301,L,NE,QSD]
+
+#https://wyimki.pl/#/blog/fbclid=IwAR3R_6v5mIZrKr2hxZtuVfQ_SqxEiO0xTD-E1nRBnkn32NFUZG42PCPdqo4
