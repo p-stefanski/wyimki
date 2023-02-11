@@ -130,7 +130,7 @@
 				
 				/* SLIDESHOW */
 				/* slideshowOn; true, false */
-				slideshowOn: true,
+				slideshowOn: false,
 				/* useGlobalDelay; true, false (use same timer delay for all slides, if false you need to set individual delays for every slide -> data-duration attribute) */
 				useGlobalDelay: true,
 				/* slideshowAdvancesToNextCategory: true/false. On the end/beginning of current category, go to next/previous one, instead of loop current one. */
