@@ -12,3 +12,12 @@ RewriteRule ^sitemap.xml$ sitemap.php [L]
 #RewriteRule (.*) /#/blog/%1? [R=301,L,NE,QSD]
 RewriteCond %{REQUEST_URI} ^/blog/(.+) [NC]
 RewriteRule (.*) /#/blog/%1? [R,L,NE]
+
+<IfModule mod_authz_core.c>
+    Require all granted
+</IfModule>
+
+<IfModule !mod_authz_core.c>
+    Order Allow,Deny
+    Allow from all
+</IfModule>
