@@ -246,7 +246,7 @@
                                    <ul>
 									  		<?php foreach ($photos as $value) { ?>
 
-											  <li data-address='<?php print($value) ?>' class='playlistItem6' data-imagePath='media/blog/<?php print($value) ?>.jpg' data-target='_blank' data-caption-id="#caption_fb" data-description="&#9993; kontakt@wyimki.pl"<?php if (in_array($value, $movies)) print " data-localMp4='media/blog/2015-08-01-02.mp4' data-localPreview='media/blog/2015-08-01-02.jpg'" ?>><a href='#'><img src='media/blog/thumbs/<?php print($value) ?>.jpg' width='133' height='100' alt=''/></a></li>
+											  <li data-address='<?php print($value) ?>' class='playlistItem6' data-imagePath='media/blog/<?php print($value) ?>.jpg' data-target='_blank' data-caption-id="#caption_fb" data-description="&#9993; ayumwtee7@mozmail.com"<?php if (in_array($value, $movies)) print " data-localMp4='media/blog/2015-08-01-02.mp4' data-localPreview='media/blog/2015-08-01-02.jpg'" ?>><a href='#'><img src='media/blog/thumbs/<?php print($value) ?>.jpg' width='133' height='100' alt=''/></a></li>
 
 									  		<?php } ?>
 
