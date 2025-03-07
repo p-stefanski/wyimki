@@ -10,6 +10,7 @@
 
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="wyimki:<?php print($title) ?>" />
+		<meta property="og:description" content="wyimki:<?php print($title) ?>" />
 		<meta property="og:url" content="https://wyimki.pl" />
 		<meta property="og:image" content="https://wyimki.pl/media/blog/<?php print($default_image) ?>.jpg"/>
 		<meta property="fb:admins" content="100000246552747" />
