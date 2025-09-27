@@ -1,5 +1,6 @@
 <?php 
 	$photos = array(
+		"2025-08-17-01",
 		"2025-07-26-01",
 		"2025-07-25-01",
 		"2025-07-10-01",
@@ -92,7 +93,7 @@
 
 	$title = " kadry, fragmenty, wycinki";
 
-	$default_image = "2025-07-26-01";
+	$default_image = "2025-08-17-01";
 	
 	$movies = array(
 		"2015-08-01-02"
