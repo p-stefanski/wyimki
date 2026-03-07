@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -8,15 +12,15 @@
 		<meta name="Description" content="wyimki.pl - kadry, fragmenty, wycinki">
 
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="wyimki: kadry, fragmenty, wycinki" />
-		<meta property="og:description" content="wyimki: kadry, fragmenty, wycinki" />
+		<meta property="og:title" content="wyimki: {{ site.data.settings.title }}" />
+		<meta property="og:description" content="wyimki: {{ site.data.settings.title }}" />
 		<meta property="og:url" content="https://wyimki.pl" />
-		<meta property="og:image" content="https://wyimki.pl/media/blog/2025-11-30-01.jpg"/>
+		<meta property="og:image" content="https://wyimki.pl/media/blog/{{ site.data.settings.defaultImage }}.jpg"/>
 		<meta property="fb:admins" content="100000246552747" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>{{ site.data.config.title }}</title>
+        <title>{{ site.data.settings.title }}</title>
 
         <link rel="stylesheet" type="text/css" href="css/videoPlayer.css" />
         <link rel="stylesheet" type="text/css" href="css/audioPlayer_tl.css" />
