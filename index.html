@@ -35,82 +35,6 @@
         <script type="text/javascript" src="js/jquery.apTextScroller.min.js"></script>
         <script type="text/javascript" src="js/jquery.html5audio.min.js"></script>
         <script type="text/javascript" src="js/jquery.multiGallery.min.js"></script>
-        <!-- ZAŁADUJ USTAWIENIA Z settings.json -->
-		<script type="text/javascript">
-			console.log("Tralalala")
-			var settings = null; // Globalna zmienna dla ustawień
-			
-			// Funkcja do załadowania settings.json
-			async function loadSettings() {
-				console.log("Tralalala1")
-				try {
-					const response = await fetch('settings.json');
-					settings = await response.json();
-					console.log('Settings loaded:', settings);
-					
-					// Zaktualizuj meta tagi po załadowaniu
-					updateMetaTags();
-					console.log("Tralalala2")
-					
-					// Wygeneruj playlistę
-					generatePlaylist();
-					console.log("Tralalala3")
-					
-					// Inicjalizuj galerię
-					initializeGallery();
-					console.log('isReady()', isReady && isReady());
-					console.log('forcePause?', getSlideshowForcePause && getSlideshowForcePause());
-					console.log("Tralalala4")
-				} catch (error) {
-					console.error('Error loading settings:', error);
-				}
-			}
-			
-			// Funkcja do aktualizacji meta tagów
-			function updateMetaTags() {
-				document.title = 'wyimki:' + settings.title;
-				document.querySelector('meta[property="og:title"]').content = 'wyimki:' + settings.title;
-				document.querySelector('meta[property="og:description"]').content = 'wyimki:' + settings.title;
-				document.querySelector('meta[property="og:image"]').content = 'https://wyimki.pl/media/blog/' + settings.defaultImage + '.jpg';
-			}
-			
-			// Funkcja do generowania playlisty
-			function generatePlaylist() {
-				if (!settings) return;
-				
-				const playlistUl = document.querySelector('.playlist ul');
-				playlistUl.innerHTML = ''; // Wyczyść istniejącą zawartość
-				
-				settings.photos.forEach(function(photo) {
-					const li = document.createElement('li');
-					li.setAttribute('data-address', photo);
-					li.className = 'playlistItem6';
-					li.setAttribute('data-imagePath', 'media/blog/' + photo + '.jpg');
-					li.setAttribute('data-target', '_blank');
-					li.setAttribute('data-caption-id', '#caption_fb');
-					li.setAttribute('data-description', '&#9993; ayumwtee7@mozmail.com');
-					
-					// Sprawdź czy to film
-					if (settings.movies.includes(photo)) {
-						li.setAttribute('data-localMp4', 'media/blog/' + photo + '.mp4');
-						li.setAttribute('data-localPreview', 'media/blog/' + photo + '.jpg');
-					}
-					
-					li.innerHTML = '<a href="#"><img src="media/blog/thumbs/' + photo + '.jpg" width="133" height="100" alt="df"/></a>';
-					playlistUl.appendChild(li);
-				});
-			}
-			
-			// Funkcja inicjalizująca galerię (przeniesiona z document.ready)
-			function initializeGallery() {
-				if (!settings) return;
-				console.log("chuck testa")
-				jsReady = true;
-				gallery1 = jQuery('#componentWrapper').multiGallery(kb_settings, ap_settings);
-				kb_settings = null;
-				ap_settings = null;
-			}
-		</script>
 		<script type="text/javascript">
 		
 			/* GALLERY CALLBACKS */
@@ -293,7 +217,6 @@
 			var gallery1;  
 			
 			jQuery(document).ready(function($) {
-				loadSettings();
 				jsReady = true;
 				gallery1 = $('#componentWrapper').multiGallery(kb_settings, ap_settings);
 				kb_settings = null;
@@ -322,11 +245,11 @@
 								 <div class="playlist" data-address='blog' data-title='blog' data-transitionType='reveal' data-imageFitMode='fit-inside' data-duration='10000' data-transitionEase='_default' data-bgColor='#000000' data-playlistSize='180' data-transitionEase='easeInOutExpo'>
                                    <ul>
 									  		
-<!-- 											  <li data-address='2025-11-30-01' class='playlistItem6' data-imagePath='media/blog/2025-11-30-01.jpg' data-target='_blank' data-caption-id="#caption_fb" data-description="&#9993; ayumwtee7@mozmail.com"><a href='#'><img src='media/blog/thumbs/2025-11-30-01.jpg' width='133' height='100' alt=''/></a></li>
+											  <li data-address='2025-11-30-01' class='playlistItem6' data-imagePath='media/blog/2025-11-30-01.jpg' data-target='_blank' data-caption-id="#caption_fb" data-description="&#9993; ayumwtee7@mozmail.com"><a href='#'><img src='media/blog/thumbs/2025-11-30-01.jpg' width='133' height='100' alt=''/></a></li>
 
 									  		
 											  <li data-address='2025-11-02-01' class='playlistItem6' data-imagePath='media/blog/2025-11-02-01.jpg' data-target='_blank' data-caption-id="#caption_fb" data-description="&#9993; ayumwtee7@mozmail.com"><a href='#'><img src='media/blog/thumbs/2025-11-02-01.jpg' width='133' height='100' alt=''/></a></li>
--->
+
 									  		
 											  <li data-address='2025-11-22-01' class='playlistItem6' data-imagePath='media/blog/2025-11-22-01.jpg' data-target='_blank' data-caption-id="#caption_fb" data-description="&#9993; ayumwtee7@mozmail.com"><a href='#'><img src='media/blog/thumbs/2025-11-22-01.jpg' width='133' height='100' alt=''/></a></li>
 
@@ -602,7 +525,7 @@
 
 									  		
 											  <li data-address='2014-12-27-01' class='playlistItem6' data-imagePath='media/blog/2014-12-27-01.jpg' data-target='_blank' data-caption-id="#caption_fb" data-description="&#9993; ayumwtee7@mozmail.com"><a href='#'><img src='media/blog/thumbs/2014-12-27-01.jpg' width='133' height='100' alt=''/></a></li>
- -->
+
 									  		
                                   </ul>  
                              </div>
