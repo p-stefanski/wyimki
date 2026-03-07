@@ -249,7 +249,7 @@ layout: null
 								 <div class="playlist" data-address='blog' data-title='blog' data-transitionType='reveal' data-imageFitMode='fit-inside' data-duration='10000' data-transitionEase='_default' data-bgColor='#000000' data-playlistSize='180' data-transitionEase='easeInOutExpo'>
                                    <ul>
 									  	{% for photo in site.data.settings.photos %}
-									  		<li data-address='{{ photo }}' class='playlistItem6' data-imagePath='media/blog/{{ photo }}.jpg' data-target='_blank' data-caption-id="#caption_fb" data-description="&#9993; ayumwtee7@mozmail.com" {% for movie in site.data.settings.movies %} " data-localMp4='media/blog/2015-08-01-02.mp4' data-localPreview='media/blog/2015-08-01-02.jpg'" {% endfor %}><a href='#'><img src='media/blog/thumbs/{{ photo }}.jpg' width='133' height='100' alt=''/></a></li>
+									  		<li data-address='{{ photo }}' class='playlistItem6' data-imagePath='media/blog/{{ photo }}.jpg' data-target='_blank' data-caption-id="#caption_fb" data-description="&#9993; ayumwtee7@mozmail.com" {% if site.data.settings.movies contains photo %} data-localMp4='media/blog/{{ photo }}.mp4' data-localPreview='media/blog/{{ photo }}.jpg' {% endif %}><a href='#'><img src='media/blog/thumbs/{{ photo }}.jpg' width='133' height='100' alt=''/></a></li>
 									  	{% endfor %}
                                   </ul>  
                              </div>
